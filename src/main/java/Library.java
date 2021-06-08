@@ -13,4 +13,8 @@ public class Library {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public int bookCount() {
+        return this.books.size();
+    }
 }
