@@ -2,16 +2,19 @@ import java.util.ArrayList;
 
 public class Reader {
 
-    private ArrayList<Book> book;
+    private ArrayList<Book> books;
     private String name;
-    private int reading;
 
     public Reader(String name) {
         this.name = name;
-        this.reading = 0;
+        this.books = new ArrayList<>();
     }
 
     public String getName() {
         return this.name;
+    }
+
+    public int bookCount() {
+        return this.books.size();
     }
 }
