@@ -11,4 +11,7 @@ public class Reader {
         this.reading = 0;
     }
 
+    public String getName() {
+        return this.name;
+    }
 }
