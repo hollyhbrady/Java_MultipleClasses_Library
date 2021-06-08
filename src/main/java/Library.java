@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+
 public class Library {
 
     private ArrayList<Book> books;
-    privte int capacity;
+    private int capacity;
 
     public Library(int capacity) {
         this.capacity = capacity;
