@@ -28,5 +28,4 @@ public class Reader {
             this.takeBook(bookRemoved);
         }
     }
-
 }
