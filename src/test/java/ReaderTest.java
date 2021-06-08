@@ -16,4 +16,15 @@ public class ReaderTest {
     public void readerHasName() {
         assertEquals("Holly", reader.getName());
     }
+
+    @Test
+    public void readerListStartsEmpty() {
+        assertEquals(0, reader.bookCount());
+    }
+
+    @Test
+    public void readerTakesBookFromLibrary() {
+        reader.addBookFromLibrary();
+        assertEquals(1, reader.bookCount());
+    }
 }
