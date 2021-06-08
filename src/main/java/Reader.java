@@ -6,7 +6,7 @@ public class Reader {
     private String name;
     private int reading;
 
-    public Reader(String name, int reading) {
+    public Reader(String name) {
         this.name = name;
         this.reading = 0;
     }
