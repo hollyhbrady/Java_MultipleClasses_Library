@@ -7,7 +7,10 @@ public class Library {
 
     public Library(int capacity) {
         this.capacity = capacity;
-        this.books = new ArrayList<Book>();
+        this.books = new ArrayList<>();
     }
 
+    public int getCapacity() {
+        return this.capacity;
+    }
 }
