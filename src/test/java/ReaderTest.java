@@ -6,10 +6,14 @@ import static org.junit.Assert.assertEquals;
 public class ReaderTest {
 
     Reader reader;
+    Library library;
+    Book book;
 
     @Before
     public void before() {
         reader = new Reader("Holly");
+        library = new Library(3);
+        library.addBook(book);
     }
     
     @Test
@@ -24,7 +28,8 @@ public class ReaderTest {
 
     @Test
     public void readerTakesBookFromLibrary() {
-        reader.addBookFromLibrary();
+        reader.addBookFromLibrary(library);
         assertEquals(1, reader.bookCount());
+        assertEquals(0, library.bookCount());
     }
 }

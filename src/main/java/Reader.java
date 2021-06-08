@@ -4,8 +4,6 @@ public class Reader {
 
     private ArrayList<Book> books;
     private String name;
-    Book book;
-    Library library;
 
     public Reader(String name) {
         this.name = name;
@@ -20,11 +18,11 @@ public class Reader {
         return this.books.size();
     }
 
-    private void takeBook(Book bookRemoved) {
-        this.books.remove(bookRemoved);
+    private void takeBook(Book book) {
+        this.books.add(book);
     }
 
-    public void addBookFromLibrary() {
+    public void addBookFromLibrary(Library library) {
         if (this.bookCount() < 1) {
             Book bookRemoved = library.removeBook();
             this.takeBook(bookRemoved);
